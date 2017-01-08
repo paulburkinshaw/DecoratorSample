@@ -60,5 +60,26 @@ namespace PriceCalculation.Tests
                           && expected.All(e => result.Count(a => a.Quantity == e.Quantity) == 1), "Actual items do not match expected items");
 
         }
+
+        [Test]
+        public void AddBasketItem_ItemWithZeroQuantity_ItemIsNotAdded()
+        {
+            // Arrange
+            var item = new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 0 };
+            
+            var basket = new Basket();
+
+            var expected = new List<BasketItem>();
+         
+            // Act
+            basket.AddBasketItem(item);
+         
+            var result = basket.BasketItems;
+
+            // Assert
+            Assert.AreEqual(expected.Count, result.Count, "Number of actual elements do not match the expected number of elements");
+
+         
+        }
     }
 }
