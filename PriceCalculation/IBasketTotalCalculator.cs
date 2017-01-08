@@ -9,5 +9,7 @@ namespace PriceCalculation
     public interface IBasketTotalCalculator
     {
         decimal CalculateBasketTotal();
+        List<BasketItem> BasketItems { get; }
+
     }
 }

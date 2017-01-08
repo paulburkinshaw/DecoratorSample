@@ -24,5 +24,7 @@ namespace PriceCalculation
         {
             return _basketTotalCalculator.CalculateBasketTotal();
         }
+
+        public virtual List<BasketItem> BasketItems { get { return _basketTotalCalculator.BasketItems; } }
     }
 }

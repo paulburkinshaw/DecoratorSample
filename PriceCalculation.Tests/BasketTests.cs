@@ -128,47 +128,7 @@ namespace PriceCalculation.Tests
         }
 
 
-        [Test]
-        public void CalculateBasketTotal_TwoButterItemsOneBread_BreadItemCostIsDiscountedByFiftyPercent()
-        {
-            // Arrange
-            var item1 = new BasketItem { Name = "Bread", Cost = 1.00M, Quantity = 1 };
-            var item2 = new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 2 };
-           
-            var basket = new Basket();
-            basket.AddBasketItem(item1);
-            basket.AddBasketItem(item2);
-          
-            decimal expected = 2.10M;
-
-            // Act
-            var result = basket.CalculateBasketTotal();
-
-            // Assert
-            Assert.AreEqual(expected, result);
-        }
-
-
-        [Test]
-        public void CalculateBasketTotal_FourMilkItems_OneMilkIsFree()
-        {
-            // Arrange
-            var item = new BasketItem { Name = "Milk", Cost = 1.15M, Quantity = 4 };
-
-            var basket = new Basket();
-            basket.AddBasketItem(item);
-
-            decimal expected = 3.45M;
-
-            // Act
-            var result = basket.CalculateBasketTotal();
-
-            // Assert
-            Assert.AreEqual(expected, result);
-        }
-       
-
-
+        
 
         #endregion
     }
