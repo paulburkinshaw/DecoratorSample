@@ -149,6 +149,23 @@ namespace PriceCalculation.Tests
         }
 
 
+        [Test]
+        public void CalculateBasketTotal_FourMilkItems_OneMilkIsFree()
+        {
+            // Arrange
+            var item = new BasketItem { Name = "Milk", Cost = 1.15M, Quantity = 4 };
+
+            var basket = new Basket();
+            basket.AddBasketItem(item);
+
+            decimal expected = 3.45M;
+
+            // Act
+            var result = basket.CalculateBasketTotal();
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
        
 
 
