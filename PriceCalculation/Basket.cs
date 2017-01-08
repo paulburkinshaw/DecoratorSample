@@ -17,12 +17,13 @@ namespace PriceCalculation
 
         public void AddBasketItem(BasketItem item)
         {
-            if (BasketItems.Exists(x => x.Name == item.Name))
-                BasketItems.Find(x => x.Name == item.Name).Quantity += item.Quantity;
-            else
-            {
-                BasketItems.Add(item);
-            }     
+            if(item.Quantity > 0)
+                if (BasketItems.Exists(x => x.Name == item.Name))
+                    BasketItems.Find(x => x.Name == item.Name).Quantity += item.Quantity;
+                else
+                {
+                    BasketItems.Add(item);
+                }     
         }
 
     }

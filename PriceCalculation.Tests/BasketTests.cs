@@ -68,17 +68,15 @@ namespace PriceCalculation.Tests
             var item = new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 0 };
             
             var basket = new Basket();
-
-            var expected = new List<BasketItem>();
-         
+       
             // Act
             basket.AddBasketItem(item);
          
             var result = basket.BasketItems;
 
             // Assert
-            Assert.AreEqual(expected.Count, result.Count, "Number of actual elements do not match the expected number of elements");
-
+            Assert.AreEqual(0, result.Count, "Number of actual elements do not match the expected number of elements");
+           
          
         }
     }
