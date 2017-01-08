@@ -16,7 +16,7 @@ namespace PriceCalculation
         public List<BasketItem> BasketItems {get; private set;}
 
         public void AddBasketItem(BasketItem item)
-        {
+        {            
             BasketItems.Add(item);
         }
 
