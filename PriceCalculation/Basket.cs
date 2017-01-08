@@ -26,5 +26,15 @@ namespace PriceCalculation
                 }     
         }
 
+        public decimal CalculateBasketTotal()
+        {
+            decimal total = 0;
+            foreach (BasketItem item in BasketItems)
+            {
+                total += (item.Quantity * item.Cost);
+            }
+            return total;
+        }
+
     }
 }

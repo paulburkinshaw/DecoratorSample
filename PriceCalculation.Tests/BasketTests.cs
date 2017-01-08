@@ -103,9 +103,7 @@ namespace PriceCalculation.Tests
 
             // Assert
             Assert.AreEqual(expected, result);
-
         }
-       
 
         #endregion
     }
