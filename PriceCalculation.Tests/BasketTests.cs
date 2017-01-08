@@ -105,6 +105,29 @@ namespace PriceCalculation.Tests
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void CalculateBasketTotal_MultipleItems_ReturnsSumOfItemCostMultipliedByItemQuantity()
+        {
+            // Arrange
+            var item1 = new BasketItem { Name = "Bread", Cost = 1.00M, Quantity = 1 };
+            var item2 = new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 1 };
+            var item3 = new BasketItem { Name = "Milk", Cost = 1.15M, Quantity = 1 };
+        
+            var basket = new Basket();
+            basket.AddBasketItem(item1);
+            basket.AddBasketItem(item2);
+            basket.AddBasketItem(item3);
+
+            decimal expected = 2.95M;
+
+            // Act
+            var result = basket.CalculateBasketTotal();
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+       
+
         #endregion
     }
 }
