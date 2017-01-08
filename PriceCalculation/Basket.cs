@@ -16,8 +16,13 @@ namespace PriceCalculation
         public List<BasketItem> BasketItems {get; private set;}
 
         public void AddBasketItem(BasketItem item)
-        {            
-            BasketItems.Add(item);
+        {
+            if (BasketItems.Exists(x => x.Name == item.Name))
+                BasketItems.Find(x => x.Name == item.Name).Quantity += item.Quantity;
+            else
+            {
+                BasketItems.Add(item);
+            }     
         }
 
     }
