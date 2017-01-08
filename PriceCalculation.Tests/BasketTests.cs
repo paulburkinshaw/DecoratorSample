@@ -8,6 +8,8 @@ namespace PriceCalculation.Tests
     [TestFixture]
     public class BasketTests
     {
+        #region AddBasketItem tests
+
         [Test]
         public void AddBasketItem_SingleItem_ItemIsAdded()
         {
@@ -76,8 +78,35 @@ namespace PriceCalculation.Tests
 
             // Assert
             Assert.AreEqual(0, result.Count, "Number of actual elements do not match the expected number of elements");
-           
-         
+
+
         }
+
+        #endregion
+
+
+        #region CalculateBasketTotal tests
+
+        [Test]
+        public void CalculateBasketTotal_SingleItem_ReturnsItemCostMultipliedByItemQuantity()
+        {
+            // Arrange
+            var item = new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 2 };
+
+            var basket = new Basket();
+            basket.AddBasketItem(item);
+
+            decimal expected = 1.60M;
+
+            // Act
+            var result = basket.CalculateBasketTotal();
+
+            // Assert
+            Assert.AreEqual(expected, result);
+
+        }
+       
+
+        #endregion
     }
 }
