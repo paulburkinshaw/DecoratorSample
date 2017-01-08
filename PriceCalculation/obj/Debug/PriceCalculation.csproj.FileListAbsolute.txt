@@ -1,0 +1,5 @@
+C:\Git\PriceCalculation\PriceCalculation\bin\Debug\PriceCalculation.dll
+C:\Git\PriceCalculation\PriceCalculation\bin\Debug\PriceCalculation.pdb
+C:\Git\PriceCalculation\PriceCalculation\obj\Debug\PriceCalculation.csprojResolveAssemblyReference.cache
+C:\Git\PriceCalculation\PriceCalculation\obj\Debug\PriceCalculation.dll
+C:\Git\PriceCalculation\PriceCalculation\obj\Debug\PriceCalculation.pdb

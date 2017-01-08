@@ -1,0 +1,9 @@
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\PriceCalculation.Tests.dll
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\PriceCalculation.Tests.pdb
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\nunit.framework.dll
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\PriceCalculation.dll
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\PriceCalculation.pdb
+C:\Git\PriceCalculation\PriceCalculation.Tests\bin\Debug\nunit.framework.xml
+C:\Git\PriceCalculation\PriceCalculation.Tests\obj\Debug\PriceCalculation.Tests.csprojResolveAssemblyReference.cache
+C:\Git\PriceCalculation\PriceCalculation.Tests\obj\Debug\PriceCalculation.Tests.dll
+C:\Git\PriceCalculation\PriceCalculation.Tests\obj\Debug\PriceCalculation.Tests.pdb
