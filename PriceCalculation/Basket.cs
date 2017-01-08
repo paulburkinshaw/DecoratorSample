@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace PriceCalculation
 {
-    public class Basket
+    public class Basket : IBasketTotalCalculator
     {
-        public Basket()
-        {
-            BasketItems = new List<BasketItem>();
-        }
-
-        public List<BasketItem> BasketItems {get; private set;}
+        List<BasketItem> _basketItems = new List<BasketItem>();
+     
+        public List<BasketItem> BasketItems { get { return _basketItems; } }
 
         public void AddBasketItem(BasketItem item)
         {
@@ -45,4 +42,6 @@ namespace PriceCalculation
         }
 
     }
+
+
 }
