@@ -32,6 +32,29 @@ namespace PriceCalculation.Tests
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void CalculateBasketTotal_FourSourceItemsTwoTargetItem_ReturnsBasketPriceMinusDiscount()
+        {
+            // Arrange
+            var basketItems = new List<BasketItem>{
+                new BasketItem { Name = "Bread", Cost = 1.00M, Quantity = 2 },
+                new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 4 }
+            };
+            Mock<IBasketTotalCalculator> mockBasket = new Mock<IBasketTotalCalculator>();
+            mockBasket.Setup(x => x.BasketItems).Returns(basketItems);
+            mockBasket.Setup(x => x.CalculateBasketTotal()).Returns(basketItems.Sum(i => i.Cost * i.Quantity));
+
+            var basketTotalCalculator = new BuyTwoItemsGetDiscountDecorator("Butter", "Bread", mockBasket.Object);
+
+            decimal expected = 4.20M;
+
+            // Act
+            var result = basketTotalCalculator.CalculateBasketTotal();
+
+            // Assert   
+            Assert.AreEqual(expected, result);
+        }
+
 
         
     }
