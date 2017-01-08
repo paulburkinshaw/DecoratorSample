@@ -28,12 +28,12 @@ namespace PriceCalculation
 
         public decimal CalculateBasketTotal()
         {
-            decimal total = 0;
-            foreach (BasketItem item in BasketItems)
-            {
-                total += (item.Quantity * item.Cost);
-            }
-            return total;
+           
+            decimal breadDiscount = 0.00M;
+            if(BasketItems.Exists(x => x.Name == "Butter" && x.Quantity ==2))
+                breadDiscount = BasketItems.Exists(x => x.Name == "Bread") ? (BasketItems.Find(x => x.Name == "Bread").Cost * 50 / 100) : 0.00M;
+
+            return BasketItems.Sum(i => i.Cost * i.Quantity) - breadDiscount;
         }
 
     }
