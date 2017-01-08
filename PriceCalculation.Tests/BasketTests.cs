@@ -1,10 +1,11 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 
 namespace PriceCalculation.Tests
 {
     [TestFixture]
-    public class UnitTest1
+    public class BasketTests
     {
         [Test]
         public void AddBasketItem_SingleItem_ItemIsAdded()
@@ -24,8 +25,6 @@ namespace PriceCalculation.Tests
 
             // Assert
             Assert.AreEqual(expected.Count, result.Count);
-            
-
         }
     }
 }
