@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PriceCalculation
 {
-    public class Basket : IBasketTotalCalculator
+    public class Basket : IBasket
     {
         List<BasketItem> _basketItems = new List<BasketItem>();
      
