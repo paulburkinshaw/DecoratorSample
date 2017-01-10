@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PriceCalculation.Basket" Collapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAABAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Basket.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PriceCalculation.BasketTotalDecorator" Collapsed="true">
+    <Position X="5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAACAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasketTotalDecorator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PriceCalculation.BuyTwoItemsGetDiscountDecorator" Collapsed="true">
+    <Position X="3.75" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>BuyTwoItemsGetDiscountDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceCalculation.BuyThreeItemsGetFourthItemFreeDecorator" Collapsed="true">
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuyThreeItemsGetFourthItemFreeDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceCalculation.BasketTotalCalculatorFactory" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasketTotalCalculatorFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PriceCalculation.IBasketTotalCalculator" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBasketTotalCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PriceCalculation.IBasket" Collapsed="true">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBasket.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

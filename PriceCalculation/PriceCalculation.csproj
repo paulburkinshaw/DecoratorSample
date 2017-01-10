@@ -42,12 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basket.cs" />
+    <Compile Include="IBasket.cs" />
+    <Compile Include="BasketTotalCalculatorFactory.cs" />
     <Compile Include="BasketTotalDecorator.cs" />
     <Compile Include="BasketItem.cs" />
     <Compile Include="BuyThreeItemsGetFourthItemFreeDecorator.cs" />
     <Compile Include="BuyTwoItemsGetDiscountDecorator.cs" />
     <Compile Include="IBasketTotalCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
