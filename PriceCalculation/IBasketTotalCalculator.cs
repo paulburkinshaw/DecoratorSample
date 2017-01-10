@@ -10,6 +10,5 @@ namespace PriceCalculation
     {
         decimal CalculateBasketTotal();
         List<BasketItem> BasketItems { get; }
-
     }
 }
