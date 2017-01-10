@@ -12,7 +12,7 @@ namespace PriceCalculation.Tests
         [Test]
         public void CalculateBasketTotal_TwoSourceItemsOneTargetItem_ReturnsBasketPriceMinus50PercentDiscountOnTargetItem()
         {
-            // Arrange
+            // Arrange          
             var basketItems = new List<BasketItem>{
                 new BasketItem { Name = "Bread", Cost = 1.00M, Quantity = 1 },
                 new BasketItem { Name = "Butter", Cost = 0.80M, Quantity = 2 }
