@@ -1,4 +1,0 @@
-C:\Git\PriceCalculation\PriceCalculation.Repository\bin\Debug\PriceCalculation.Repository.dll
-C:\Git\PriceCalculation\PriceCalculation.Repository\bin\Debug\PriceCalculation.Repository.pdb
-C:\Git\PriceCalculation\PriceCalculation.Repository\obj\Debug\PriceCalculation.Repository.dll
-C:\Git\PriceCalculation\PriceCalculation.Repository\obj\Debug\PriceCalculation.Repository.pdb

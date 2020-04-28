@@ -14,19 +14,13 @@
       <HashCode>AAAABAACAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BasketTotalDecorator.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.11" />
   </Class>
   <Class Name="PriceCalculation.BuyTwoItemsGetDiscountDecorator" Collapsed="true">
     <Position X="3.75" Y="3" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>BuyTwoItemsGetDiscountDecorator.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PriceCalculation.BuyThreeItemsGetFourthItemFreeDecorator" Collapsed="true">
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BuyThreeItemsGetFourthItemFreeDecorator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PriceCalculation.BasketTotalCalculatorFactory" Collapsed="true">
@@ -36,8 +30,15 @@
       <FileName>BasketTotalCalculatorFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="PriceCalculation.BuyThreeItemsGetFourthItemFreeDecorator" Collapsed="true">
+    <Position X="7" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuyThreeItemsGetFourthItemFreeDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="PriceCalculation.IBasketTotalCalculator" Collapsed="true">
-    <Position X="3.5" Y="0.5" Width="2" />
+    <Position X="3.75" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IBasketTotalCalculator.cs</FileName>

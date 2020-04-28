@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/.vs/PriceCalculation
+/packages
+PriceCalculation/bin/
+PriceCalculation/obj/
+PriceCalculation.Tests/obj/
+PriceCalculation.Tests/bin/
+PriceCalculation.Repository/bin/
+PriceCalculation.Repository/obj/
+PriceCalculation.WebClient/bin/
+PriceCalculation.WebClient/obj/
+
+
